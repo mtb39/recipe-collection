@@ -1,0 +1,17 @@
+name: Validate static site
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - name: Verify generated files are current
+        run: |
+          python3 build.py
+          git diff --exit-code -- docs/
+      - name: Check site behavior and content
+        run: node tests/check-site.mjs
