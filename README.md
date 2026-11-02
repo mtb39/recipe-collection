@@ -1,42 +1,33 @@
 # Recipe collection
 
-A small, public recipe collection, starting with a Seven Fishes dinner. Built with plain HTML, CSS, and JavaScript; no installation or build is required.
+A public, buildless recipe collection at https://mtb39.github.io/recipe-collection/. Plain HTML, CSS and JavaScript; no accounts, backend, analytics or remote assets.
 
-## Content
+## Menus
 
-The first menu contains four recipes covering seven seafood species. The original recipe notes do not specify quantities or servings. Those values stay explicitly unspecified; the site does not invent amounts or offer automatic scaling.
+- **Seven Fishes / Christmas Eve:** four supplied recipes spanning seven seafood varieties. Original recipe objects and shopping item strings are preserved. Amounts and servings remain unspecified except the source’s reserved pasta water.
+- **Thanksgiving:** a sourced whole deep-fried turkey guide for the Creole Feast TFS3010, including equipment, prominent risk/emergency panels, prep sequence and linked primary sources. This is a sourced guide, not a tested family recipe. No turkey weight, oil gallons, servings, fixed duration or automatic scaling is assumed.
 
-Recipe content is public. Do not add email headers, sender addresses, private notes, credentials, or material you do not have permission to publish.
+The menu chooser scopes search, counts, checklist state, text downloads, prep notes and printing. Printing includes the selected menu’s complete instructions and sources, even if a tab or search has hidden them. It restores the prior search and disclosure state afterward. The Seven Fishes browser-storage key and item strings remain compatible with existing checks. Each menu has its own clear/check/export actions.
 
-## Local preview
+## Edit and generate
 
-From the repository root:
+Edit `content.py` for recipes, menu metadata, equipment/shopping groups, source links, warnings and prep notes. `site/template.html`, `site/styles.css` and `site/app.js` define presentation and browser behavior. Run:
 
 ```sh
-python3 -m http.server 8000
+python3 build.py
+node tests/check-site.mjs
 ```
 
-Open `http://localhost:8000/docs/`. This also checks that relative assets work below a subpath. Search and ingredient checklists run in the browser. There is no backend or account system.
+Commit both generated outputs, `docs/index.html` and `docs/recipes.json`, with source changes. The JSON is a readable export; the page embeds its data and does not fetch it at runtime. The build needs no network or third-party dependencies. `SOURCE.md` distinguishes supplied recipes from sourced guide material.
 
-## Publishing after the first PR is merged
+Keep public content free of email headers, sender addresses, secrets and private notes. Use linked primary sources for new safety guidance and check the actual equipment manual before importing generic cooking advice.
 
-The initial pull request contains all website content. The default branch starts with one empty bootstrap commit. Publishing is deliberately pending the owner's merge.
+## Local preview and QA
 
-After that merge:
+From the repository root, run `python3 -m http.server 8000` and open `http://localhost:8000/docs/`. Test below a subpath, as Pages uses `/recipe-collection/`.
 
-1. Open **Settings → Pages** in this repository.
-2. Select **Deploy from a branch**, branch **main**, folder **/docs**, and save.
-3. Wait for GitHub's Pages deployment to complete.
-4. Verify `https://mtb39.github.io/recipe-collection/` on desktop and mobile, including search, ingredient checks, and print preview.
+CI regenerates outputs and requires no diff, then runs dependency-free checks for original-recipe preservation, menu/storage isolation, search, keyboard tabs, exports, malformed/unavailable storage and print state restoration. These script checks do not verify mobile rendering, actual touch behavior or paginated print output. Before approving content changes, inspect both menus in a browser, including a narrow window, repeated menu switches, reload persistence, downloaded lists and print preview.
 
-No custom domain, external hosting account, deployment token, or custom deployment workflow is needed. The site URL above is the expected address, not confirmation that publishing has completed.
+## Publication
 
-Future changes go through a feature branch and pull request. Merging updates to the publishing branch lets GitHub Pages publish them automatically. Revert a problematic change through a pull request.
-
-## Editing recipes
-
-Edit `recipes` and `groups` in `build.py`, then run `python3 build.py` to regenerate `docs/index.html` and `docs/recipes.json`. Commit both outputs with the generator. `recipes.json` is a readable export; this version embeds its data in the HTML rather than fetching the export at runtime. `SOURCE.md` records the supplied instructions and identifies editorial additions.
-
-## Verification
-
-Run `python3 build.py`, then `git diff --exit-code -- docs/` and `node tests/check-site.mjs`. CI runs these same dependency-free checks with read-only repository access. The script tests delivered JavaScript against a minimal DOM: search, tabs and keyboard navigation, checklist persistence/reset, unavailable storage, download creation, and print reset. It also checks recipe counts and privacy constraints. This is not a substitute for browser rendering, mobile layout, or print-preview QA.
+GitHub Pages is already configured from `main:/docs`, with HTTPS. All content changes go through feature branches/worktrees and PRs. The owner merges; an agent must not merge or enable auto-merge without explicit authorization. Merging a content PR triggers the existing Pages publication. Do not add a new hosting account, credentials, custom domain or deployment workflow. Roll back through a revert PR.

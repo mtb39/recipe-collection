@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="A personal recipe collection: Seven Fishes for Christmas Eve and a sourced Thanksgiving turkey guide.">
+  <title>The Recipe Book · Menus</title>
+  <style>__STYLE__</style>
+</head>
+<body>
+  <header><div class="wrap top"><a class="brand" href="#">The Recipe <span>Book</span></a><span class="small">Good food, kept close.</span><span class="tag">__COUNTS__</span></div></header>
+  <main class="wrap">
+    <div class="menu-picker"><label for="menu-select">Choose a menu</label><select id="menu-select">__OPTIONS__</select><span id="menu-status" class="count" role="status"></span></div>
+    <noscript><p class="note">JavaScript enables menu switching, search and checklists. Both menus and their full instructions remain readable below. You can also <a href="recipes.json">read the recipe data</a>.</p></noscript>
+    __MENUS__
+  </main>
+  <footer><div class="wrap footer-row"><span>The Recipe Book · A growing collection</span><span>Recipe notes and sourced cooking guides</span></div></footer>
+  <script>
+const data=__DATA__;
+__SCRIPT__
+  </script>
+</body>
+</html>
