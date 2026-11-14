@@ -4,6 +4,8 @@ A public, buildless recipe collection at https://mtb39.github.io/recipe-collecti
 
 ## Menus
 
+- **Baked Ziti:** a proposed, measured 1 lb pasta recipe for a 9×13-inch pan (about 6–8 servings), with optional Italian pork sausage and a homemade-sauce adjustment. Includes a companion homemade red sauce using two 28 oz cans, with regular Tuttorosso or San Marzano-style options. Not yet family-tested.
+
 - **Seven Fishes / Christmas Eve:** four supplied recipes spanning seven seafood varieties. Original recipe objects and shopping item strings are preserved. Amounts and servings remain unspecified except the source’s reserved pasta water.
 - **Thanksgiving:** a sourced whole deep-fried turkey guide for the Creole Feast TFS3010, including equipment, prominent risk/emergency panels, prep sequence and linked primary sources. This is a sourced guide, not a tested family recipe. No turkey weight, oil gallons, servings, fixed duration or automatic scaling is assumed.
 
@@ -26,7 +28,7 @@ Keep public content free of email headers, sender addresses, secrets and private
 
 From the repository root, run `python3 -m http.server 8000` and open `http://localhost:8000/docs/`. Test below a subpath, as Pages uses `/recipe-collection/`.
 
-CI regenerates outputs and requires no diff, then runs dependency-free checks for original-recipe preservation, menu/storage isolation, search, keyboard tabs, exports, malformed/unavailable storage and print state restoration. These script checks do not verify mobile rendering, actual touch behavior or paginated print output. Before approving content changes, inspect both menus in a browser, including a narrow window, repeated menu switches, reload persistence, downloaded lists and print preview.
+CI regenerates outputs and requires no diff, then runs dependency-free checks for original-recipe preservation, menu/storage isolation, search, keyboard tabs, exports, malformed/unavailable storage and print state restoration. These script checks do not verify mobile rendering, actual touch behavior or paginated print output. Before approving content changes, inspect all menus in a browser, including a narrow window, repeated menu switches, reload persistence, downloaded lists and print preview.
 
 ## Publication
 

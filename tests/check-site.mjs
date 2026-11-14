@@ -6,8 +6,8 @@ const html = fs.readFileSync(new URL('../docs/index.html', import.meta.url), 'ut
 const data = JSON.parse(fs.readFileSync(new URL('../docs/recipes.json', import.meta.url)));
 const original = JSON.parse(fs.readFileSync(new URL('fixtures/seven-fishes.json', import.meta.url)));
 const script = html.match(/<script>([\s\S]*?)<\/script>/)[1];
-assert.equal(data.menus.length, 2);
-const [seafood, thanksgiving] = data.menus;
+assert.equal(data.menus.length, 3);
+const [seafood, thanksgiving, ziti] = data.menus;
 assert.deepEqual(seafood.recipes, original.recipes);
 assert.deepEqual(seafood.shoppingGroups, original.shoppingGroups);
 assert.equal(seafood.storageKey, 'recipebook-sevenfishes-shopping-v1');
@@ -15,7 +15,7 @@ assert.equal(new Set(seafood.recipes.flatMap(r => r.seafood)).size, 7);
 assert.equal(thanksgiving.recipes.length, 1);
 assert.equal(thanksgiving.recipes[0].seafood.length, 0);
 assert.notEqual(seafood.storageKey, thanksgiving.storageKey);
-assert.ok(data.menus.every(m => m.servings === null && !m.quantitiesComplete));
+assert.ok([seafood, thanksgiving].every(m => m.servings === null && !m.quantitiesComplete));
 assert.ok(!/[\w.+-]+@[\w.-]+\.[a-zA-Z]{2,}/.test(html));
 assert.ok(!/\b(?:fetch|XMLHttpRequest)\s*\(/.test(script));
 assert.ok(!/innerHTML/.test(fs.readFileSync(new URL('../site/app.js', import.meta.url), 'utf8')));
@@ -95,3 +95,31 @@ app.events.beforeprint();assert.equal(app.ids['thanksgiving-turkey'].open,true);
 for(const bad of ['bad json','null','[]']){const broken=run({[thanksgiving.storageKey]:bad});broken.select('thanksgiving');assert.equal(broken.ids['thanksgiving-count'].textContent,'1 recipe in this menu');}
 const blocked=run({},true);const bcheck=blocked.checks('thanksgiving')[0];bcheck.checked=true;bcheck.dispatchEvent({type:'change'});assert.match(blocked.ids['thanksgiving-storage-status'].textContent,/unavailable/);blocked.select('seven-fishes');blocked.select('thanksgiving');assert.equal(bcheck.checked,true);
 console.log('PASS: menu/data isolation, source safeguards, original seafood preservation, search, keyboard tabs, legacy storage, per-menu checks/reset/export, repeated switching, unavailable storage, selected-menu print and state restoration');
+
+// The quantified recipe must remain usable through the same menu interactions.
+assert.equal(ziti.servings, '6–8');
+assert.equal(ziti.quantitiesComplete, true);
+assert.equal(new Set(data.menus.map(m => m.storageKey)).size, 3);
+app.select('baked-ziti');
+app.search('baked-ziti', 'ricotta');
+assert.equal(app.ids['baked-ziti-count'].textContent, '1 recipe found');
+assert.equal(app.menu('thanksgiving').hidden, true);
+const zcheck = app.checks('baked-ziti')[0];
+zcheck.checked = true; zcheck.dispatchEvent({type:'change'});
+assert.equal(run(app.store).checks('baked-ziti')[0].checked, true);
+app.ids['baked-ziti-download'].click();
+assert.equal(app.links.at(-1).download, 'baked-ziti-checklist.txt');
+assert.match(await app.blobs.at(-1).text(), /1 lb dry ziti/);
+assert.ok(!(await app.blobs.at(-1).text()).includes('Whole turkey'));
+app.search('baked-ziti', 'no match');
+app.ids['baked-ziti'].open = false;
+app.ids['baked-ziti-print'].click();
+assert.equal(app.ids['baked-ziti'].open, true);
+app.events.afterprint();
+assert.equal(app.ids['baked-ziti-search'].value, 'no match');
+assert.equal(app.ids['baked-ziti'].open, false);
+console.log('PASS: quantified ziti menu search, checklist persistence, isolated export and print restoration');
+
+app.search('baked-ziti', 'flat-leaf parsley');
+assert.equal(app.ids['baked-ziti-count'].textContent, '1 recipe found');
+assert.equal(ziti.recipes.length, 2);

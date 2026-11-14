@@ -32,3 +32,9 @@ Independent cooking-safety review specifically checked displacement, fill/headsp
 ## Verification
 
 `tests/fixtures/seven-fishes.json` preserves the first menu’s original export for structural comparison. Tests verify unchanged recipe objects and shopping strings, separate storage keys, per-menu interaction behavior and selected-menu printing. Generated output is reproducible without network access. Browser verification is reported separately in the PR; script tests are not visual or real-print QA.
+
+## Baked ziti proposed recipe
+
+Added November 14, 2026: original assistant-proposed quantities and method for 1 lb dry ziti in a 9×13-inch pan, approximately 6–8 servings. Not a tested family recipe. Red sauce, ricotta, mozzarella and Parmesan form the base; mild Italian pork sausage is optional. The homemade-sauce adjustment assumes no specific private sauce recipe. FoodSafety.gov's linked temperature chart supports the sausage/casserole temperatures; the recipe amounts, timing, texture cues and prep order are editorial proposals.
+
+The same menu includes an original companion red sauce: two 28 oz cans of whole peeled tomatoes plus onion, garlic, Italian flat-leaf parsley and basil. Manufacturer pages verify regular Tuttorosso and San Marzano-style whole peeled options. Serious Eats' quick red sauce and Tuttorosso's marinara informed the general method; this version's quantities, late herbs and measured 4½–5 cup target are proposed adaptations for the ziti. Use all can juices and measure after a gentle simmer; can contents and evaporation vary. Sources checked November 14, 2026. No claim of family testing, current price or local availability.

@@ -46,7 +46,7 @@ def recipe_card(menu, recipe):
       <p>{esc(recipe['intro'])}</p><div class="pills">{''.join(f'<span class="pill">{esc(t)}</span>' for t in tags)}</div>
       <div class="time">{esc(recipe['time'])} · {esc(recipe['method'])}</div></div>
       <details id="{esc(recipe['id'])}"><summary>Open recipe</summary><div class="recipe-body">
-      <h4>Ingredients · amounts to confirm</h4><ul>{''.join(f'<li>{esc(i)}</li>' for i in recipe['ingredients'])}</ul>
+      <h4>Ingredients{ "" if menu["quantitiesComplete"] else " · amounts to confirm"}</h4><ul>{''.join(f'<li>{esc(i)}</li>' for i in recipe['ingredients'])}</ul>
       {gear}<h4>Method</h4><ol>{steps}</ol><div class="note">{esc(recipe['note'])}</div>
       </div></details></article>'''
 
@@ -79,7 +79,7 @@ def render_menu(menu):
     return f'''<div class="menu" id="menu-{mid}" data-menu="{mid}">
       <div class="hero"><div><div class="eyebrow">{esc(menu['eyebrow'])}</div><h1>{esc(menu['title'])}</h1>
       <p class="lead">{esc(menu['intro'])}</p><div class="meta"><div><strong>{recipe_count}</strong>{'recipe' if recipe_count == 1 else 'recipes'}</div>
-      <div><strong>{esc(menu['statValue'])}</strong>{esc(menu['statLabel'])}</div><div><strong>To confirm</strong>servings & quantities</div></div></div>
+      <div><strong>{esc(menu['statValue'])}</strong>{esc(menu['statLabel'])}</div><div><strong>{esc(menu["servings"]) if menu["quantitiesComplete"] else "To confirm"}</strong>{"approximate servings" if menu["quantitiesComplete"] else "servings & quantities"}</div></div></div>
       <div class="hero-art" aria-hidden="true"><span class="plate-number">{esc(menu['statValue'])}<small>{esc(menu['statLabel'])}</small></span></div></div>
       {warning(menu, 'warning')}{warning(menu, 'emergency')}
       <div class="note"><strong>{esc(menu['noticeTitle'])}</strong> {esc(menu['notice'])}</div>
