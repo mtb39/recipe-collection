@@ -550,6 +550,206 @@
         }
       ],
       "safety": "Read the severe-risk and emergency panels above, the complete guide and the actual unit manual. Do not begin if safe fit, fill, drying, equipment or outdoor conditions cannot all be achieved. Choose another cooking method instead."
+    },
+    {
+      "id": "baked-ziti",
+      "title": "Baked Ziti",
+      "shortTitle": "Baked Ziti · Comfort food",
+      "eyebrow": "Comfort food · One pan for the table",
+      "intro": "Classic red-sauce baked ziti with ricotta, mozzarella and Parmesan, plus an optional Italian sausage variation.",
+      "statValue": "375°F",
+      "statLabel": "oven temperature",
+      "servings": "6–8",
+      "quantitiesComplete": true,
+      "noticeTitle": "A practical starting recipe.",
+      "notice": "Measured for 1 lb dry pasta in a 9×13-inch dish. Yield is approximate. This is a newly proposed recipe, ready to cook and adjust after the first batch.",
+      "recipes": [
+        {
+          "id": "baked-ziti",
+          "title": "Classic Baked Ziti",
+          "course": "Main course",
+          "seafood": [],
+          "tags": [
+            "Pasta",
+            "Ricotta",
+            "Optional Italian sausage"
+          ],
+          "time": "About 25 min prep + 35–40 min bake + 10 min rest",
+          "method": "Oven · 375°F",
+          "intro": "Saucy pasta with creamy pockets of ricotta and a golden mozzarella top. One 9×13-inch pan, about 6–8 servings.",
+          "ingredients": [
+            "1 lb dry ziti",
+            "4½–5 cups red tomato sauce or marinara",
+            "15 oz whole-milk ricotta",
+            "12 oz low-moisture mozzarella, shredded and divided",
+            "½ cup grated Parmesan, divided",
+            "1 large egg",
+            "Salt and black pepper, to taste",
+            "Butter or oil, enough to lightly grease the pan",
+            "Reserve 1 cup pasta water; use only as needed",
+            "Optional: 1 lb mild Italian pork sausage, casings removed",
+            "Optional: chopped basil or parsley, to finish"
+          ],
+          "equipment": [
+            "9×13-inch baking dish",
+            "Foil",
+            "Large pasta pot and colander",
+            "Mixing bowl",
+            "Food thermometer",
+            "Skillet if using sausage"
+          ],
+          "steps": [
+            "Heat the oven to 375°F. Lightly grease a 9×13-inch baking dish. If using sausage, crumble and brown it in a skillet until cooked through (160°F for pork sausage); drain excess fat and set the sausage aside. Warm the tomato sauce gently; measure sauce separately from the meat.",
+            "Boil the ziti in salted water about 2 minutes less than the package al dente time. It should bend but still have a firm center. Reserve 1 cup pasta water, then drain; do not rinse.",
+            "For thick homemade sauce, stir in reserved pasta water a little at a time, starting with ¼ cup, until it pours easily and coats the pasta generously. If the sauce is watery, simmer it before measuring instead. Taste for salt; homemade sauce varies. Start with 4½ cups sauce and keep the extra ½ cup for dry spots.",
+            "Mix the ricotta, egg, ¼ cup Parmesan and a little pepper. Salt lightly according to how salty the cheeses and sauce are.",
+            "Spread ½ cup sauce in the dish. Toss the pasta with 3½ cups tomato sauce, then add all the cooked sausage if using. It should look generously sauced, not dry. Layer half the pasta, half the ricotta in small dollops and half the mozzarella. Repeat with the remaining pasta, ricotta and mozzarella. Spoon the remaining ½–1 cup sauce over exposed pasta and finish with the remaining ¼ cup Parmesan.",
+            "Cover with foil, tenting it above the cheese. Bake 20 minutes, then uncover and bake 15–20 minutes more, until bubbling into the center, the pasta is tender and the cheese has browned in spots. Check the center reaches 165°F; allow more time if needed. Timing assumes freshly assembled pasta and warm sauce, not a chilled pan.",
+            "Rest 10 minutes so the sauce settles while the pasta stays moist. Finish with optional basil or parsley and serve."
+          ],
+          "note": "Original proposed recipe, not yet family-tested. The sauce should be loose enough to coat every piece: pasta absorbs more in the oven. Measure 4½–5 cups tomato sauce before adding optional cooked sausage; do not add raw meat to the casserole."
+        },
+        {
+          "id": "ziti-red-sauce",
+          "title": "Homemade Red Sauce for Baked Ziti",
+          "course": "Companion sauce",
+          "seafood": [],
+          "tags": [
+            "Tomato",
+            "Basil",
+            "Flat-leaf parsley",
+            "Tuttorosso"
+          ],
+          "time": "About 10 min prep + 35–45 min cooking",
+          "method": "Stovetop · Gentle simmer",
+          "intro": "Two cans of whole peeled tomatoes, onion and garlic, finished with fresh basil and Italian flat-leaf parsley. Aim for 4½–5 cups for the 1 lb ziti recipe.",
+          "ingredients": [
+            "2 (28 oz) cans whole peeled tomatoes, with all their juice",
+            "3 tbsp olive oil",
+            "1 medium onion, finely diced",
+            "4 garlic cloves, minced",
+            "¼ cup chopped fresh Italian flat-leaf parsley",
+            "¼ cup loosely packed fresh basil leaves, torn just before adding",
+            "½ tsp kosher salt to start, then to taste (less if tomatoes are salty)",
+            "Black pepper, to taste",
+            "Optional: pinch of red pepper flakes",
+            "Water or reserved pasta water, only as needed to adjust final consistency"
+          ],
+          "equipment": [
+            "Heavy saucepan or Dutch oven",
+            "Measuring jug",
+            "Spoon or potato masher"
+          ],
+          "steps": [
+            "Choose either two 28 oz cans of regular Tuttorosso Peeled Plum Tomatoes or two 28 oz cans of San Marzano-style whole peeled tomatoes, such as Tuttorosso Whole Peeled Pear Tomatoes with Basil & Sea Salt. Use whichever is a good value; this recipe does not require premium DOP tomatoes. Both options use the same method. Check the can for existing salt and basil before seasoning.",
+            "Crush the tomatoes in a bowl with your hands or a potato masher, keeping all the can juices. For a smoother sauce, briefly blend instead.",
+            "Warm the olive oil over medium-low heat. Add the onion and cook 8–10 minutes, stirring, until soft and translucent without dark browning. Add the garlic and optional pepper flakes; stir 30–60 seconds, just until fragrant.",
+            "Add the tomatoes and all their juices, the starting salt and a little black pepper. Bring to a gentle simmer, then cook partly covered about 25–35 minutes, stirring occasionally, until the onion is tender and the raw tomato flavor has mellowed. Crush remaining large pieces. Do not boil hard or reduce to a thick paste.",
+            "Stir in the parsley and basil for the final 2–3 minutes. Taste and adjust seasoning. Measure the sauce: aim for 4½–5 cups, loose and spoonable for baked pasta. If reduced below that, add water a little at a time; if you have extra, measure out 4½–5 cups for the ziti and save the rest. Yield varies with the cans and simmer, so use the measuring jug rather than time alone.",
+            "Use the warm sauce in Classic Baked Ziti above. If including sausage, brown it separately as directed there, then add it to the pasta after measuring and dividing the tomato sauce. Do not simmer the sauce for hours or add tomato paste for this batch; keep enough moisture for the oven."
+          ],
+          "note": "An original companion sauce informed by published tomato-sauce methods, not a reproduction or a tested family recipe. The two can options are interchangeable here; fresh parsley, late herbs, the gentle reduction and measured yield are proposed adjustments for this baked ziti."
+        }
+      ],
+      "shoppingGroups": {
+        "Pasta, cheese & filling": [
+          "1 lb dry ziti",
+          "15 oz whole-milk ricotta",
+          "12 oz low-moisture mozzarella, shredded and divided",
+          "½ cup grated Parmesan, divided",
+          "1 large egg",
+          "Salt and black pepper, to taste",
+          "Butter or oil, enough to lightly grease the pan",
+          "Reserve 1 cup pasta water; use only as needed",
+          "Optional: 1 lb mild Italian pork sausage, casings removed",
+          "Optional: chopped basil or parsley, to finish"
+        ],
+        "Homemade sauce — replaces the prepared sauce": [
+          "2 (28 oz) cans whole peeled tomatoes, with all their juice",
+          "3 tbsp olive oil",
+          "1 medium onion, finely diced",
+          "4 garlic cloves, minced",
+          "¼ cup chopped fresh Italian flat-leaf parsley",
+          "¼ cup loosely packed fresh basil leaves, torn just before adding",
+          "½ tsp kosher salt to start, then to taste (less if tomatoes are salty)",
+          "Black pepper, to taste",
+          "Optional: pinch of red pepper flakes",
+          "Water or reserved pasta water, only as needed to adjust final consistency"
+        ]
+      },
+      "storageKey": "recipebook-baked-ziti-shopping-v1",
+      "exportName": "baked-ziti-checklist.txt",
+      "shoppingTab": "Shopping list",
+      "shoppingTitle": "One pan, a short list.",
+      "shoppingIntro": "This list makes the homemade sauce plus one pan of ziti; do not also buy prepared sauce. Shared salt, pepper, oil and herbs are listed by recipe, not consolidated. Choose optional sausage and garnish. Checks stay in this browser.",
+      "exportNote": "One 9×13-inch pan · 1 lb dry ziti · about 6–8 servings. Includes homemade sauce instead of prepared sauce; shared seasonings are not consolidated. Optional sausage and garnish.",
+      "prepIntro": "From scratch, allow about 90–105 minutes including the rest; timing varies. Start the sauce first, then heat the oven and cook pasta while it simmers. Bake with warm sauce and freshly cooked pasta.",
+      "prep": [
+        {
+          "title": "Start the heat",
+          "text": "Start the homemade sauce: soften onion, add garlic, then gently simmer the crushed whole tomatoes and juices. Heat the oven and pasta water while the sauce cooks; prepare the cheese and optional sausage."
+        },
+        {
+          "title": "Keep the pasta firm and sauce loose",
+          "text": "Undercook the pasta by about 2 minutes, reserve water and adjust thick homemade sauce. Mix the ricotta filling while the pasta cooks."
+        },
+        {
+          "title": "Layer and bake",
+          "text": "Layer generously sauced pasta, ricotta dollops and mozzarella. Cover for 20 minutes, then uncover for 15–20 minutes, checking the center and texture."
+        },
+        {
+          "title": "Rest and serve",
+          "text": "Give the pan 10 minutes to settle before serving. Note sauce thickness and timing for the next batch."
+        }
+      ],
+      "notes": [
+        {
+          "title": "Recipe provenance",
+          "text": "Original assistant-proposed recipe prepared November 14, 2026, for a simple baked-ziti request. Quantities and yield are proposed starting amounts, not inherited family measurements or a tested result."
+        },
+        {
+          "title": "Homemade tomato sauce",
+          "text": "No particular homemade sauce recipe is assumed. Loosen a thick reduction gradually with reserved pasta water; simmer a watery sauce first. Taste the sauce before assembling and season accordingly."
+        },
+        {
+          "title": "Sauce research and choices",
+          "text": "The linked published sauce recipes informed the general tomato-and-aromatics approach. This companion uses the requested onion, garlic, Italian flat-leaf parsley and basil; its quantities, late-herb step and measured 4½–5 cup yield are editorial choices for baked pasta. Regular Tuttorosso and San Marzano-style whole peeled tomatoes are both options; no price or local-stock claim is made."
+        }
+      ],
+      "pairings": [],
+      "sources": [
+        {
+          "id": "temps",
+          "url": "https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures",
+          "label": "FoodSafety.gov · Safe minimum internal temperatures",
+          "detail": "Checked November 14, 2026. Supports 160°F for pork sausage and 165°F for casseroles and reheated leftovers; recipe quantities and bake times are proposed cooking guidance."
+        },
+        {
+          "id": "regular-tomatoes",
+          "url": "https://tuttorossotomatoes.com/products/detail/peeled-plum-tomatoes",
+          "label": "Tuttorosso · Regular Peeled Plum Tomatoes",
+          "detail": "Manufacturer identifies the regular 28 oz whole peeled tomato option. Check the actual can for ingredients and seasoning."
+        },
+        {
+          "id": "style-tomatoes",
+          "url": "https://tuttorossotomatoes.com/products/detail/san-marzano-style-whole-peeled-pear-tomatoes-with-basil-sea-salt-28-oz",
+          "label": "Tuttorosso · San Marzano Style Whole Peeled Pear Tomatoes",
+          "detail": "Manufacturer identifies the 28 oz whole peeled option with basil and sea salt; reduce added salt to taste."
+        },
+        {
+          "id": "sauce-method",
+          "url": "https://www.seriouseats.com/easy-italian-amercian-red-sauce-recipe",
+          "label": "Serious Eats · Quick Italian-American Red Sauce",
+          "detail": "Research reference for a quick sauce using two cans of whole peeled tomatoes. The companion recipe uses its own quantities and the requested herbs, and omits tomato paste."
+        },
+        {
+          "id": "late-basil",
+          "url": "https://tuttorossotomatoes.com/recipes/detail/marinara-sauce",
+          "label": "Tuttorosso · Marinara Sauce",
+          "detail": "Research reference for adding fresh basil toward the end. Its chopped-tomato and prepared-sauce formula is not reproduced here."
+        }
+      ],
+      "safety": "Use a food thermometer: pork sausage 160°F before combining; finished casserole and reheated leftovers 165°F. See FoodSafety.gov in Source & notes."
     }
   ]
 }
