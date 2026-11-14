@@ -322,106 +322,296 @@ menus = [
     },
 ]
 
-ziti_recipe = {
-    'id': 'baked-ziti', 'title': 'Classic Baked Ziti', 'course': 'Main course',
-    'seafood': [], 'tags': ['Pasta', 'Ricotta', 'Optional Italian sausage'],
-    'time': 'About 25 min prep + 35–40 min bake + 10 min rest', 'method': 'Oven · 375°F',
-    'intro': 'Saucy pasta with creamy pockets of ricotta and a golden mozzarella top. One 9×13-inch pan, about 6–8 servings.',
-    'ingredients': [
-        '1 lb dry ziti', '4½–5 cups red tomato sauce or marinara',
-        '15 oz whole-milk ricotta', '12 oz low-moisture mozzarella, shredded and divided',
-        '½ cup grated Parmesan, divided', '1 large egg',
-        'Salt and black pepper, to taste', 'Butter or oil, enough to lightly grease the pan',
-        'Reserve 1 cup pasta water; use only as needed',
-        'Optional: 1 lb mild Italian pork sausage, casings removed',
-        'Optional: chopped basil or parsley, to finish',
-    ],
-    'equipment': ['9×13-inch baking dish', 'Foil', 'Large pasta pot and colander',
-                  'Mixing bowl', 'Food thermometer', 'Skillet if using sausage'],
-    'steps': [
-        'Heat the oven to 375°F. Lightly grease a 9×13-inch baking dish. If using sausage, crumble and brown it in a skillet until cooked through (160°F for pork sausage); drain excess fat and set the sausage aside. Warm the tomato sauce gently; measure sauce separately from the meat.',
-        'Boil the ziti in salted water about 2 minutes less than the package al dente time. It should bend but still have a firm center. Reserve 1 cup pasta water, then drain; do not rinse.',
-        'For thick homemade sauce, stir in reserved pasta water a little at a time, starting with ¼ cup, until it pours easily and coats the pasta generously. If the sauce is watery, simmer it before measuring instead. Taste for salt; homemade sauce varies. Start with 4½ cups sauce and keep the extra ½ cup for dry spots.',
-        'Mix the ricotta, egg, ¼ cup Parmesan and a little pepper. Salt lightly according to how salty the cheeses and sauce are.',
-        'Spread ½ cup sauce in the dish. Toss the pasta with 3½ cups tomato sauce, then add all the cooked sausage if using. It should look generously sauced, not dry. Layer half the pasta, half the ricotta in small dollops and half the mozzarella. Repeat with the remaining pasta, ricotta and mozzarella. Spoon the remaining ½–1 cup sauce over exposed pasta and finish with the remaining ¼ cup Parmesan.',
-        'Cover with foil, tenting it above the cheese. Bake 20 minutes, then uncover and bake 15–20 minutes more, until bubbling into the center, the pasta is tender and the cheese has browned in spots. Check the center reaches 165°F; allow more time if needed. Timing assumes freshly assembled pasta and warm sauce, not a chilled pan.',
-        'Rest 10 minutes so the sauce settles while the pasta stays moist. Finish with optional basil or parsley and serve.',
-    ],
-    'note': 'Original proposed recipe, not yet family-tested. The sauce should be loose enough to coat every piece: pasta absorbs more in the oven. Measure 4½–5 cups tomato sauce before adding optional cooked sausage; do not add raw meat to the casserole.',
-}
+ziti_recipe = {'id': 'baked-ziti',
+ 'title': 'Sausage & Beef Baked Ziti',
+ 'course': 'Main course',
+ 'seafood': [],
+ 'tags': ['Pasta', 'Ricotta', 'Italian sausage', '93/7 ground beef', 'Meatless alternative'],
+ 'time': 'Freshly assembled: about 35 min prep + 35–45 min bake + 10 min rest (sauce separately); make-ahead '
+         'options below',
+ 'method': 'Oven · 375°F',
+ 'intro': 'A hearty baked ziti with 1 lb mild Italian sausage, 1 lb lean ground beef and pockets of ricotta. '
+          'Keep the pasta and cheeses at the original amounts; use a deep 9×13-inch dish or divide between '
+          'two dishes.',
+ 'ingredients': ['1 lb dry ziti',
+                 '6 cups tomato sauce, measured before adding meat',
+                 '1 lb mild Italian pork sausage, casings removed',
+                 '1 lb 93/7 ground beef',
+                 '15 oz whole-milk ricotta',
+                 '12 oz low-moisture mozzarella, shredded and divided',
+                 '½ cup grated Parmesan, divided',
+                 '1 large egg',
+                 'Salt and black pepper, to taste after adding sausage',
+                 'Butter or oil, enough to lightly grease the baking dishes',
+                 'Reserve 1 cup pasta water; use only as needed',
+                 'Optional: chopped basil or parsley, to finish'],
+ 'equipment': ['Deep 9×13-inch baking dish or two smaller oven-safe dishes with room for the full batch',
+               'Foil',
+               'Large pasta pot and colander',
+               'Mixing bowl',
+               'Measuring jug',
+               'Food thermometer',
+               'Large skillet and saucepan'],
+ 'steps': ['Make the three-can Homemade Red Sauce below first. Heat the oven to 375°F. Grease a deep '
+           '9×13-inch dish, or divide the batch between two smaller dishes. Leave space below the rims for '
+           'bubbling; do not force the full batch into a shallow dish.',
+           'Remove sausage casings. Brown the crumbled sausage and the ground beef in separate batches so '
+           'each browns rather than steams, breaking up large pieces. Check each ground meat reaches 160°F, '
+           'then drain excess fat. Keep the cooked meats aside while measuring the plain tomato sauce.',
+           'Measure 6 cups tomato sauce before adding any meat: reserve ½ cup for the bottom and 1 cup for '
+           'the top. Combine the remaining 4½ cups tomato sauce with all the cooked sausage and beef. Simmer '
+           'gently 5–10 minutes. Taste and adjust salt only after the sausage is in the sauce. Keep it loose '
+           'and spoonable; add a little water if it becomes too thick.',
+           'Boil the ziti in salted water about 2 minutes less than the package al dente time. It should '
+           'bend but still have a firm center. Reserve 1 cup pasta water, then drain without rinsing. Mix '
+           'ricotta, egg, ¼ cup Parmesan and a little pepper; salt lightly, remembering the sausage and '
+           'cheeses.',
+           'Spread the reserved ½ cup plain sauce across the bottom of the dish (split evenly if using two). '
+           'Toss all the pasta with all the meat sauce made from the 4½ cups tomato sauce. Loosen with '
+           'reserved pasta water a little at a time if needed: every piece should be generously coated.',
+           'Layer half the sauced pasta, half the ricotta in small dollops and half the mozzarella; repeat '
+           'with the rest. Spoon the reserved 1 cup plain tomato sauce over exposed pasta and finish with '
+           'the remaining ¼ cup Parmesan. When using two dishes, divide every component evenly between them '
+           'and make the same two layers in each.',
+           'Cover with foil, tented above the cheese. Bake at 375°F for 20 minutes, then uncover for 15–25 '
+           'minutes, until the pasta is tender, sauce bubbles into the center and the cheese is browned in '
+           'spots. Check the center of each dish reaches 165°F; allow more time if needed. Timing assumes '
+           'freshly cooked pasta and warm sauce, not a chilled pan.',
+           'Rest 10 minutes before serving. Finish with optional basil or parsley.',
+           {'title': 'Same-day option 1: assemble, refrigerate, bake at dinner',
+            'text': 'Works for the two-meat recipe or the meatless alternative using its own sauce amounts. '
+                    'Cook the meats fully if using, then assemble through the layering step without baking. '
+                    'For chilling a freshly assembled warm batch, divide between two shallow dishes rather '
+                    'than holding a large deep hot casserole; cover and refrigerate promptly at 40°F or '
+                    'below. Do not leave it on the counter to cool. Keep total time out of refrigeration '
+                    'within 2 hours, or 1 hour above 90°F. Metal bakeware is the simplest choice: follow the '
+                    'manufacturer’s directions for refrigerator-to-hot-oven use, especially glass or '
+                    'ceramic, to avoid thermal shock. Do not assume a cold glass dish can go straight into a '
+                    'hot oven. At dinner, remove any non-oven-safe wrapping, cover with foil and bake from '
+                    'refrigerator-cold at 375°F for about 30–35 minutes covered, then 15–25 minutes '
+                    'uncovered. These are starting estimates; dish depth and temperature vary. Check the '
+                    'center of each dish reaches 165°F, with tender pasta and hot sauce throughout; continue '
+                    'baking as needed and rest 10 minutes. Do not partially bake before chilling.',
+            'sources': ['leftovers-storage', 'temps']},
+           {'title': 'Same-day option 2: bake early, refrigerate, reheat portions',
+            'text': 'Fully bake either version as directed until the center reaches 165°F. Promptly divide '
+                    'into shallow portions or shallow containers for faster cooling and refrigerate at 40°F '
+                    'or below. Refrigerate within 2 hours of cooking, or within 1 hour if exposed to '
+                    'temperatures above 90°F; do not wait for a whole deep pan to cool on the counter. Cover '
+                    'stored portions. At dinner, transfer chilled portions to suitable oven-safe dishes, add '
+                    'a spoonful of reserved sauce or a splash of water and cover with foil. Reheat at 350°F: '
+                    'allow roughly 20–30 minutes for small shallow portions as an initial estimate, with '
+                    'more time for thicker or larger portions. Check several places with a food thermometer '
+                    'until 165°F throughout; elapsed time and bubbling edges alone do not prove the center '
+                    'is hot. Keep covered longer if needed to prevent drying, and follow the bakeware '
+                    'manufacturer’s refrigerator-to-oven directions. These portion timings do not apply to '
+                    'reheating a whole deep casserole.',
+            'sources': ['leftovers-storage', 'leftovers-reheat']}],
+ 'note': 'Meatless alternative: taste and season the finished plain sauce with salt and pepper before '
+         'measuring and assembling. Omit both meats and use 4½–5 cups plain tomato sauce with the same 1 lb '
+         'pasta and unchanged cheeses/egg. Use ½ cup on the bottom, 3½ cups to toss with pasta, and ½–1 cup '
+         'on top. Skip browning and the meat-sauce simmer; use a regular 9×13-inch dish and bake 20 minutes '
+         'covered plus 15–20 uncovered, still to 165°F. Keep the three-can sauce batch and save extra sauce. '
+         'Shopping adjustment: omit only the two meat items; other listed batch ingredients stay the same. '
+         'Proposed recipe, not yet family-tested.'}
 
-menus.append({
-    'id': 'baked-ziti', 'title': 'Baked Ziti', 'shortTitle': 'Baked Ziti · Comfort food',
-    'eyebrow': 'Comfort food · One pan for the table',
-    'intro': 'Classic red-sauce baked ziti with ricotta, mozzarella and Parmesan, plus an optional Italian sausage variation.',
-    'statValue': '375°F', 'statLabel': 'oven temperature', 'servings': '6–8', 'quantitiesComplete': True,
-    'noticeTitle': 'A practical starting recipe.',
-    'notice': 'Measured for 1 lb dry pasta in a 9×13-inch dish. Yield is approximate. This is a newly proposed recipe, ready to cook and adjust after the first batch.',
-    'recipes': [ziti_recipe], 'shoppingGroups': {'Ingredients': ziti_recipe['ingredients']},
-    'storageKey': 'recipebook-baked-ziti-shopping-v1', 'exportName': 'baked-ziti-checklist.txt',
-    'shoppingTab': 'Shopping list', 'shoppingTitle': 'One pan, a short list.',
-    'shoppingIntro': 'Amounts are for one batch. Choose whether to include sausage and herbs. Pasta water is reserved during cooking. Checks stay in this browser and are separate from other menus.',
-    'exportNote': 'One 9×13-inch pan · 1 lb dry ziti · about 6–8 servings. Sausage and herbs are optional. Reserve pasta water during cooking.',
-    'prepIntro': 'Allow about 70–75 minutes including the rest; pot heating and optional sausage may add time. Bake timings assume warm sauce and freshly cooked pasta.',
-    'prep': [
-        {'title': 'Start the heat', 'text': 'Heat the oven, put the pasta water on, grease the dish and shred the cheese. Brown optional sausage and warm the sauce.'},
-        {'title': 'Keep the pasta firm and sauce loose', 'text': 'Undercook the pasta by about 2 minutes, reserve water and adjust thick homemade sauce. Mix the ricotta filling while the pasta cooks.'},
-        {'title': 'Layer and bake', 'text': 'Layer generously sauced pasta, ricotta dollops and mozzarella. Cover for 20 minutes, then uncover for 15–20 minutes, checking the center and texture.'},
-        {'title': 'Rest and serve', 'text': 'Give the pan 10 minutes to settle before serving. Note sauce thickness and timing for the next batch.'},
-    ],
-    'notes': [
-        {'title': 'Recipe provenance', 'text': 'Original assistant-proposed recipe prepared November 14, 2026, for a simple baked-ziti request. Quantities and yield are proposed starting amounts, not inherited family measurements or a tested result.'},
-        {'title': 'Homemade tomato sauce', 'text': 'No particular homemade sauce recipe is assumed. Loosen a thick reduction gradually with reserved pasta water; simmer a watery sauce first. Taste the sauce before assembling and season accordingly.'},
-    ],
-    'pairings': [],
-    'sources': [{'id': 'temps', 'url': 'https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures',
-                 'label': 'FoodSafety.gov · Safe minimum internal temperatures',
-                 'detail': 'Checked November 14, 2026. Supports 160°F for pork sausage and 165°F for casseroles and reheated leftovers; recipe quantities and bake times are proposed cooking guidance.'}],
-    'safety': 'Use a food thermometer: pork sausage 160°F before combining; finished casserole and reheated leftovers 165°F. See FoodSafety.gov in Source & notes.',
-})
+ziti_sauce = {'id': 'ziti-red-sauce',
+ 'title': 'Homemade Red Sauce for Baked Ziti',
+ 'course': 'Companion sauce',
+ 'seafood': [],
+ 'tags': ['Tomato', 'Basil', 'Flat-leaf parsley', 'Tuttorosso'],
+ 'time': 'About 10 min prep + 35–45 min cooking',
+ 'method': 'Stovetop · Gentle simmer',
+ 'intro': 'Three 28-oz cans of whole peeled tomatoes with proportionally scaled onion, garlic, basil and '
+          'Italian flat-leaf parsley. Measure 6 cups for the two-meat ziti and save surplus.',
+ 'ingredients': ['3 (28 oz) cans whole peeled tomatoes, with all their juice',
+                 '4½ tbsp olive oil',
+                 '1½ medium onions, finely diced',
+                 '6 garlic cloves, minced',
+                 '6 tbsp chopped fresh Italian flat-leaf parsley',
+                 '6 tbsp loosely packed fresh basil leaves, torn just before adding',
+                 'Salt and black pepper, to taste (salt the ziti meat sauce after adding sausage)',
+                 'Optional: pinch of red pepper flakes',
+                 'Water or reserved pasta water, only as needed to adjust final consistency'],
+ 'equipment': ['Heavy saucepan or Dutch oven', 'Measuring jug', 'Spoon or potato masher'],
+ 'steps': ['Choose three 28 oz cans of regular Tuttorosso Peeled Plum Tomatoes or San Marzano-style whole '
+           'peeled tomatoes, such as Tuttorosso Whole Peeled Pear Tomatoes with Basil & Sea Salt. Use '
+           'whichever is a good value; no premium DOP tomatoes are required. Both options use the same '
+           'method. Check the can for existing salt and basil.',
+           'Crush the tomatoes in a bowl with your hands or a potato masher, keeping all can juices. For '
+           'smoother sauce, briefly blend instead.',
+           'Warm 4½ tbsp olive oil over medium-low heat. Soften the diced onion 8–10 minutes, stirring, '
+           'without dark browning. Add garlic and optional pepper flakes; stir 30–60 seconds until fragrant.',
+           'Add the tomatoes and all juices with a little pepper. Simmer gently, partly covered, about 25–35 '
+           'minutes, stirring occasionally, until the onion is tender and raw tomato flavor has mellowed; '
+           'this larger batch may need longer. Crush large pieces. Do not boil hard or reduce to a thick '
+           'paste.',
+           'Add the parsley and basil for the final 2–3 minutes. Measure 6 cups of loose, spoonable tomato '
+           'sauce for the two-meat ziti before adding meat; save surplus for another meal or serving. Actual '
+           'yield varies. If over-reduced below 6 cups, loosen gradually with water. Leave final salt '
+           'adjustment of the meat sauce until after adding sausage.',
+           'In the ziti recipe, reserve ½ cup plain sauce for the bottom and 1 cup for the top. Simmer all '
+           'cooked meat in the remaining 4½ cups for 5–10 minutes. For the meatless alternative, use only '
+           '4½–5 cups of this sauce and save the extra. Avoid an hours-long reduction or added tomato paste: '
+           'baked pasta needs moisture.'],
+ 'note': 'Scaled 1½ times from the original two-can companion sauce: three cans, 4½ tbsp oil, 1½ onions, 6 '
+         'garlic cloves and 6 tbsp each parsley and loosely packed basil. Measure the needed sauce rather '
+         'than assuming a fixed yield; keep and save surplus. Original proposed adaptation, not a tested '
+         'family recipe.'}
 
-# Keep the companion sauce in the same menu, following the existing multi-recipe menu convention.
-ziti_sauce = {
-    'id': 'ziti-red-sauce', 'title': 'Homemade Red Sauce for Baked Ziti', 'course': 'Companion sauce',
-    'seafood': [], 'tags': ['Tomato', 'Basil', 'Flat-leaf parsley', 'Tuttorosso'],
-    'time': 'About 10 min prep + 35–45 min cooking', 'method': 'Stovetop · Gentle simmer',
-    'intro': 'Two cans of whole peeled tomatoes, onion and garlic, finished with fresh basil and Italian flat-leaf parsley. Aim for 4½–5 cups for the 1 lb ziti recipe.',
-    'ingredients': ['2 (28 oz) cans whole peeled tomatoes, with all their juice',
-                    '3 tbsp olive oil', '1 medium onion, finely diced', '4 garlic cloves, minced',
-                    '¼ cup chopped fresh Italian flat-leaf parsley',
-                    '¼ cup loosely packed fresh basil leaves, torn just before adding',
-                    '½ tsp kosher salt to start, then to taste (less if tomatoes are salty)',
-                    'Black pepper, to taste', 'Optional: pinch of red pepper flakes',
-                    'Water or reserved pasta water, only as needed to adjust final consistency'],
-    'equipment': ['Heavy saucepan or Dutch oven', 'Measuring jug', 'Spoon or potato masher'],
-    'steps': [
-        'Choose either two 28 oz cans of regular Tuttorosso Peeled Plum Tomatoes or two 28 oz cans of San Marzano-style whole peeled tomatoes, such as Tuttorosso Whole Peeled Pear Tomatoes with Basil & Sea Salt. Use whichever is a good value; this recipe does not require premium DOP tomatoes. Both options use the same method. Check the can for existing salt and basil before seasoning.',
-        'Crush the tomatoes in a bowl with your hands or a potato masher, keeping all the can juices. For a smoother sauce, briefly blend instead.',
-        'Warm the olive oil over medium-low heat. Add the onion and cook 8–10 minutes, stirring, until soft and translucent without dark browning. Add the garlic and optional pepper flakes; stir 30–60 seconds, just until fragrant.',
-        'Add the tomatoes and all their juices, the starting salt and a little black pepper. Bring to a gentle simmer, then cook partly covered about 25–35 minutes, stirring occasionally, until the onion is tender and the raw tomato flavor has mellowed. Crush remaining large pieces. Do not boil hard or reduce to a thick paste.',
-        'Stir in the parsley and basil for the final 2–3 minutes. Taste and adjust seasoning. Measure the sauce: aim for 4½–5 cups, loose and spoonable for baked pasta. If reduced below that, add water a little at a time; if you have extra, measure out 4½–5 cups for the ziti and save the rest. Yield varies with the cans and simmer, so use the measuring jug rather than time alone.',
-        'Use the warm sauce in Classic Baked Ziti above. If including sausage, brown it separately as directed there, then add it to the pasta after measuring and dividing the tomato sauce. Do not simmer the sauce for hours or add tomato paste for this batch; keep enough moisture for the oven.',
-    ],
-    'note': 'An original companion sauce informed by published tomato-sauce methods, not a reproduction or a tested family recipe. The two can options are interchangeable here; fresh parsley, late herbs, the gentle reduction and measured yield are proposed adjustments for this baked ziti.',
-}
-ziti_menu = menus[-1]
-ziti_menu['recipes'].append(ziti_sauce)
-ziti_menu['shoppingGroups'] = {
-    'Pasta, cheese & filling': [item for item in ziti_recipe['ingredients'] if 'red tomato sauce' not in item],
-    'Homemade sauce — replaces the prepared sauce': ziti_sauce['ingredients'],
-}
-ziti_menu['shoppingIntro'] = 'This list makes the homemade sauce plus one pan of ziti; do not also buy prepared sauce. Shared salt, pepper, oil and herbs are listed by recipe, not consolidated. Choose optional sausage and garnish. Checks stay in this browser.'
-ziti_menu['exportNote'] = 'One 9×13-inch pan · 1 lb dry ziti · about 6–8 servings. Includes homemade sauce instead of prepared sauce; shared seasonings are not consolidated. Optional sausage and garnish.'
-ziti_menu['prepIntro'] = 'From scratch, allow about 90–105 minutes including the rest; timing varies. Start the sauce first, then heat the oven and cook pasta while it simmers. Bake with warm sauce and freshly cooked pasta.'
-ziti_menu['prep'][0]['text'] = 'Start the homemade sauce: soften onion, add garlic, then gently simmer the crushed whole tomatoes and juices. Heat the oven and pasta water while the sauce cooks; prepare the cheese and optional sausage.'
-ziti_menu['notes'].append({'title': 'Sauce research and choices', 'text': 'The linked published sauce recipes informed the general tomato-and-aromatics approach. This companion uses the requested onion, garlic, Italian flat-leaf parsley and basil; its quantities, late-herb step and measured 4½–5 cup yield are editorial choices for baked pasta. Regular Tuttorosso and San Marzano-style whole peeled tomatoes are both options; no price or local-stock claim is made.'})
-ziti_menu['sources'].extend([
-    {'id': 'regular-tomatoes', 'url': 'https://tuttorossotomatoes.com/products/detail/peeled-plum-tomatoes',
-     'label': 'Tuttorosso · Regular Peeled Plum Tomatoes', 'detail': 'Manufacturer identifies the regular 28 oz whole peeled tomato option. Check the actual can for ingredients and seasoning.'},
-    {'id': 'style-tomatoes', 'url': 'https://tuttorossotomatoes.com/products/detail/san-marzano-style-whole-peeled-pear-tomatoes-with-basil-sea-salt-28-oz',
-     'label': 'Tuttorosso · San Marzano Style Whole Peeled Pear Tomatoes', 'detail': 'Manufacturer identifies the 28 oz whole peeled option with basil and sea salt; reduce added salt to taste.'},
-    {'id': 'sauce-method', 'url': 'https://www.seriouseats.com/easy-italian-amercian-red-sauce-recipe',
-     'label': 'Serious Eats · Quick Italian-American Red Sauce', 'detail': 'Research reference for a quick sauce using two cans of whole peeled tomatoes. The companion recipe uses its own quantities and the requested herbs, and omits tomato paste.'},
-    {'id': 'late-basil', 'url': 'https://tuttorossotomatoes.com/recipes/detail/marinara-sauce',
-     'label': 'Tuttorosso · Marinara Sauce', 'detail': 'Research reference for adding fresh basil toward the end. Its chopped-tomato and prepared-sauce formula is not reproduced here.'},
-])
+ziti_menu = {'id': 'baked-ziti',
+ 'title': 'Baked Ziti',
+ 'shortTitle': 'Baked Ziti · Comfort food',
+ 'eyebrow': 'Comfort food · Sausage & beef',
+ 'intro': 'Hearty baked ziti with mild Italian sausage, lean ground beef, ricotta, mozzarella and Parmesan, '
+          'plus a homemade red sauce and clear meatless alternative.',
+ 'statValue': '375°F',
+ 'statLabel': 'oven temperature',
+ 'servings': '6–8',
+ 'quantitiesComplete': True,
+ 'noticeTitle': 'Two-meat version · one batch.',
+ 'notice': '1 lb dry ziti, 1 lb mild Italian sausage, 1 lb 93/7 ground beef and 6 cups tomato sauce measured '
+           'before meat. Use a deep 9×13-inch dish or two smaller dishes. The shopping list follows this '
+           'version; the recipe note explains the meatless alternative. Yield is approximate; not yet '
+           'family-tested.',
+ 'shoppingGroups': {'Pasta, cheese & filling — two-meat batch': ['1 lb dry ziti',
+                                                                 '1 lb mild Italian pork sausage, casings '
+                                                                 'removed',
+                                                                 '1 lb 93/7 ground beef',
+                                                                 '15 oz whole-milk ricotta',
+                                                                 '12 oz low-moisture mozzarella, shredded '
+                                                                 'and divided',
+                                                                 '½ cup grated Parmesan, divided',
+                                                                 '1 large egg',
+                                                                 'Salt and black pepper, to taste after '
+                                                                 'adding sausage',
+                                                                 'Butter or oil, enough to lightly grease '
+                                                                 'the baking dishes',
+                                                                 'Reserve 1 cup pasta water; use only as '
+                                                                 'needed',
+                                                                 'Optional: chopped basil or parsley, to '
+                                                                 'finish'],
+                    'Homemade sauce — three cans, save surplus': ['3 (28 oz) cans whole peeled tomatoes, '
+                                                                  'with all their juice',
+                                                                  '4½ tbsp olive oil',
+                                                                  '1½ medium onions, finely diced',
+                                                                  '6 garlic cloves, minced',
+                                                                  '6 tbsp chopped fresh Italian flat-leaf '
+                                                                  'parsley',
+                                                                  '6 tbsp loosely packed fresh basil leaves, '
+                                                                  'torn just before adding',
+                                                                  'Salt and black pepper, to taste (salt the '
+                                                                  'ziti meat sauce after adding sausage)',
+                                                                  'Optional: pinch of red pepper flakes',
+                                                                  'Water or reserved pasta water, only as '
+                                                                  'needed to adjust final consistency']},
+ 'storageKey': 'recipebook-baked-ziti-two-meat-shopping-v1',
+ 'exportName': 'baked-ziti-checklist.txt',
+ 'shoppingTab': 'Shopping list',
+ 'shoppingTitle': 'Shop for the two-meat ziti and homemade sauce.',
+ 'shoppingIntro': 'One batch: both meats, unchanged pasta/cheeses, and a three-can homemade sauce. Do not '
+                  'also buy prepared sauce. Measure 6 cups sauce before meat and save surplus. For meatless, '
+                  'omit both meat items, use 4½–5 cups sauce and save more surplus. Shared oil, salt, pepper '
+                  'and garnish are not consolidated. Checks stay in this browser.',
+ 'exportNote': 'Two-meat batch: 1 lb ziti + 1 lb mild Italian sausage + 1 lb 93/7 beef; unchanged cheeses. '
+               'Three 28 oz tomato cans make sauce: measure 6 cups before meat, save surplus. Deep 9×13 or '
+               'two dishes. Meatless: omit both meats, use 4½–5 cups sauce; remaining shopping amounts '
+               'unchanged. Shared seasonings are not consolidated.',
+ 'prepIntro': 'Start the three-can sauce first. While it simmers, brown the meats separately, heat the oven '
+              'and prepare the cheeses. Allow about 100–120 minutes from scratch including the rest, '
+              'depending on equipment and overlap. Bake with warm sauce and freshly cooked pasta. For '
+              'same-day make-ahead, choose one of the two fully described options at the end of the ziti '
+              'method; both also apply to the meatless alternative.',
+ 'prep': [{'title': 'Start the three-can sauce',
+           'text': 'Soften onion, add garlic, then gently simmer crushed tomatoes and juices. Add parsley '
+                   'and basil late. Measure 6 cups plain sauce; save surplus. Reserve ½ cup for the bottom '
+                   'and 1 cup for the top.'},
+          {'title': 'Brown both meats and simmer',
+           'text': 'Remove sausage casings. Brown 1 lb sausage and 1 lb 93/7 beef in separate batches to '
+                   '160°F each; drain excess fat. Combine with the remaining 4½ cups measured tomato sauce '
+                   'and simmer 5–10 minutes. Taste for salt after sausage.'},
+          {'title': 'Pasta, filling and layers',
+           'text': 'Cook 1 lb ziti 2 minutes short of al dente; reserve pasta water. Mix ricotta, egg and '
+                   'half the Parmesan. Grease a deep 9×13 or two dishes. Bottom sauce, two layers of '
+                   'meat-sauced pasta/ricotta/mozzarella, top sauce and remaining Parmesan.'},
+          {'title': 'Bake and rest',
+           'text': '375°F: 20 minutes covered, then 15–25 minutes uncovered. Check every dish reaches 165°F '
+                   'in the center and pasta is tender. Rest 10 minutes. Meatless adjustments are in the '
+                   'recipe note.'},
+          {'title': 'If dinner is later: choose one make-ahead path',
+           'text': 'Either assemble and promptly refrigerate in shallow dishes at 40°F or below, then bake '
+                   'refrigerator-cold at 375°F (about 30–35 minutes covered plus 15–25 uncovered, always to '
+                   '165°F); or fully bake now, divide into shallow portions and refrigerate promptly, then '
+                   'reheat covered portions at 350°F to 165°F throughout. Follow the complete cooling, '
+                   'time-limit and bakeware instructions in the recipe.'}],
+ 'notes': [{'title': 'Recipe provenance',
+            'text': 'Original assistant-proposed recipe, updated November 14, 2026 for the owner-approved '
+                    'two-meat version. Quantities and yield are proposed, not inherited family measurements '
+                    'or a tested result. Pasta and cheese amounts are unchanged.'},
+           {'title': 'Sauce quantity and consistency',
+            'text': 'Measure 6 cups tomato sauce before adding meat. Reserve ½ cup bottom sauce and 1 cup '
+                    'top sauce; the remaining 4½ cups become meat sauce. Three cans provide a margin for '
+                    'variation: save extra rather than reducing it all down to 6 cups. Loosen overly thick '
+                    'sauce with water.'},
+           {'title': 'Meatless alternative and shopping',
+            'text': 'The recipe note preserves the original meatless base with 4½–5 cups sauce and the same '
+                    'pasta, cheeses and egg. The grocery list defaults to the two-meat batch: omit its two '
+                    'meat items for meatless. Keeping the three-can sauce recipe avoids a second confusing '
+                    'shopping list; save unused sauce. This version uses a fresh checklist key because the '
+                    'shopping quantities changed.'},
+           {'title': 'Sauce research and choices',
+            'text': 'Linked published methods informed the original companion sauce, now scaled '
+                    'proportionally from two cans to three. The requested onion, garlic, Italian flat-leaf '
+                    'parsley and basil remain. Regular Tuttorosso and San Marzano-style whole peeled '
+                    'tomatoes both work; no price or local-stock claim is made.'},
+           {'title': 'Same-day make-ahead: safety versus timing',
+            'text': 'Both options apply to the two-meat and meatless versions without changing their '
+                    'ingredient amounts or shopping list. USDA supports prompt refrigeration, shallow '
+                    'containers, 40°F storage, the 2-hour/1-hour limits and checking reheated leftovers in '
+                    'several places to 165°F. The suggested 375°F cold-bake and 350°F portion-reheat oven '
+                    'schedules are practical estimates, not USDA timing guarantees; the thermometer decides. '
+                    'Follow your bakeware maker for thermal-shock restrictions.'}],
+ 'pairings': [],
+ 'sources': [{'id': 'temps',
+              'url': 'https://www.foodsafety.gov/food-safety-charts/safe-minimum-internal-temperatures',
+              'label': 'FoodSafety.gov · Safe minimum internal temperatures',
+              'detail': 'Checked November 14, 2026. Supports 160°F for ground meat and pork sausage, and '
+                        '165°F for casseroles and reheated leftovers. Recipe quantities and bake times are '
+                        'proposed cooking guidance.'},
+             {'id': 'regular-tomatoes',
+              'url': 'https://tuttorossotomatoes.com/products/detail/peeled-plum-tomatoes',
+              'label': 'Tuttorosso · Regular Peeled Plum Tomatoes',
+              'detail': 'Manufacturer identifies the regular 28 oz whole peeled tomato option. Check the '
+                        'actual can for ingredients and seasoning.'},
+             {'id': 'style-tomatoes',
+              'url': 'https://tuttorossotomatoes.com/products/detail/san-marzano-style-whole-peeled-pear-tomatoes-with-basil-sea-salt-28-oz',
+              'label': 'Tuttorosso · San Marzano Style Whole Peeled Pear Tomatoes',
+              'detail': 'Manufacturer identifies the 28 oz whole peeled option with basil and sea salt; '
+                        'reduce added salt to taste.'},
+             {'id': 'sauce-method',
+              'url': 'https://www.seriouseats.com/easy-italian-amercian-red-sauce-recipe',
+              'label': 'Serious Eats · Quick Italian-American Red Sauce',
+              'detail': 'Research reference for a quick sauce using two cans of whole peeled tomatoes. The '
+                        'companion recipe uses its own quantities and the requested herbs, and omits tomato '
+                        'paste.'},
+             {'id': 'late-basil',
+              'url': 'https://tuttorossotomatoes.com/recipes/detail/marinara-sauce',
+              'label': 'Tuttorosso · Marinara Sauce',
+              'detail': 'Research reference for adding fresh basil toward the end. Its chopped-tomato and '
+                        'prepared-sauce formula is not reproduced here.'},
+             {'id': 'leftovers-storage',
+              'url': 'https://ask.fsis.usda.gov/article/How-do-I-handle-leftovers-safely',
+              'label': 'USDA FSIS · How do I handle leftovers safely?',
+              'detail': 'Checked November 14, 2026. Prompt refrigeration at 40°F or below, shallow '
+                        'containers, and no more than 2 hours out (1 hour above 90°F).'},
+             {'id': 'leftovers-reheat',
+              'url': 'https://ask.fsis.usda.gov/article/How-do-I-reheat-leftovers-safely',
+              'label': 'USDA FSIS · How do I reheat leftovers safely?',
+              'detail': 'Checked November 14, 2026. Check several places with a food thermometer for 165°F '
+                        'throughout. The oven temperatures and timing estimates here are editorial cooking '
+                        'guidance.'}],
+ 'safety': 'Use a food thermometer: ground pork sausage and ground beef each reach 160°F before combining; '
+           'the finished casserole and reheated leftovers reach 165°F. Check each baking dish. See '
+           'FoodSafety.gov in Source & notes.'}
+ziti_menu['recipes'] = [ziti_recipe, ziti_sauce]
+menus.append(ziti_menu)

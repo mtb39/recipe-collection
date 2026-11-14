@@ -4,7 +4,7 @@ A public, buildless recipe collection at https://mtb39.github.io/recipe-collecti
 
 ## Menus
 
-- **Baked Ziti:** a proposed, measured 1 lb pasta recipe for a 9×13-inch pan (about 6–8 servings), with optional Italian pork sausage and a homemade-sauce adjustment. Includes a companion homemade red sauce using two 28 oz cans, with regular Tuttorosso or San Marzano-style options. Not yet family-tested.
+- **Baked Ziti:** the two-meat version uses 1 lb dry ziti, 1 lb mild Italian sausage, 1 lb 93/7 ground beef and 6 cups tomato sauce measured before meat; the original pasta/cheese amounts stay unchanged. Use a deep 9×13 dish or two dishes. The companion sauce uses three 28 oz tomato cans with proportional aromatics/herbs; save surplus. A meatless alternative is in the recipe note; the shopping list defaults to both meats. Not yet family-tested.
 
 - **Seven Fishes / Christmas Eve:** four supplied recipes spanning seven seafood varieties. Original recipe objects and shopping item strings are preserved. Amounts and servings remain unspecified except the source’s reserved pasta water.
 - **Thanksgiving:** a sourced whole deep-fried turkey guide for the Creole Feast TFS3010, including equipment, prominent risk/emergency panels, prep sequence and linked primary sources. This is a sourced guide, not a tested family recipe. No turkey weight, oil gallons, servings, fixed duration or automatic scaling is assumed.

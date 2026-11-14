@@ -123,3 +123,21 @@ console.log('PASS: quantified ziti menu search, checklist persistence, isolated 
 app.search('baked-ziti', 'flat-leaf parsley');
 assert.equal(app.ids['baked-ziti-count'].textContent, '1 recipe found');
 assert.equal(ziti.recipes.length, 2);
+
+// Grocery exports must represent one two-meat batch, without also buying prepared sauce.
+app.select('baked-ziti');
+app.ids['baked-ziti-download'].click();
+const meatList = await app.blobs.at(-1).text();
+for (const required of ['1 lb dry ziti', '1 lb mild Italian pork sausage, casings removed', '1 lb 93/7 ground beef', '15 oz whole-milk ricotta', '12 oz low-moisture mozzarella', '½ cup grated Parmesan', '3 (28 oz) cans whole peeled tomatoes', '1½ medium onions', '6 garlic cloves', '6 tbsp chopped fresh Italian flat-leaf parsley', '6 tbsp loosely packed fresh basil']) {
+  assert.ok(meatList.includes(required), `missing two-meat grocery requirement: ${required}`);
+}
+const groceryItems = Object.values(ziti.shoppingGroups).flat();
+assert.equal(groceryItems.filter(i => i.includes('whole peeled tomatoes')).length, 1);
+assert.ok(!groceryItems.some(i => /cups.*(?:sauce|marinara)/.test(i)), 'homemade list must not also buy prepared sauce');
+assert.match(ziti.recipes[0].note, /Meatless alternative:/);
+assert.match(ziti.recipes[0].note, /omit both meats/i);
+assert.match(ziti.recipes[0].note, /4½–5 cups/);
+assert.notEqual(ziti.storageKey, 'recipebook-baked-ziti-shopping-v1', 'changed quantities start a fresh checklist');
+const stale = run({'recipebook-baked-ziti-shopping-v1': JSON.stringify({'1 lb dry ziti': true})});
+assert.equal(stale.checks('baked-ziti').filter(c => c.checked).length, 0);
+console.log('PASS: two-meat grocery quantities, no duplicate prepared sauce, meatless adjustment and fresh checklist');
